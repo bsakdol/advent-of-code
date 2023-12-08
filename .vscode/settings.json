@@ -1,3 +1,7 @@
 {
     "github.copilot.editor.enableAutoCompletions": false,
+    "yapf.args": [
+        "column_limit: 120"
+    ],
+    "python.analysis.autoImportCompletions": false
 }
