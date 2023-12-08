@@ -22,7 +22,7 @@ def sum_calibration_numbers(numbers):
     total_sum = 0
 
     for line in numbers:
-        line_numbers = re.findall('\d', line)
+        line_numbers = re.findall('\\d', line)
 
         if len(line_numbers) == 1:
             total_sum += int(line_numbers[0] * 2)
@@ -45,8 +45,6 @@ def main():
         print(total_sum)
     except FileNotFoundError:
         print("Error: 'puzzle_input.txt' file not found.")
-    except Exception as e:
-        print(f"An error occurred: {e}")
 
 
 if __name__ == '__main__':
